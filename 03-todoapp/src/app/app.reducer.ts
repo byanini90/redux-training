@@ -2,8 +2,8 @@ import { ActionReducerMap } from '@ngrx/store';
 
 import { Todo } from './todos/models/todo.model';
 import { todoReducer } from './todos/todo.reducer';
-import { filtroReducer } from 'filtro/filtro.reducer';
-import { filtrosValidos } from 'filtro/filtro.actions';
+import { filtrosValidos } from './todos/filtro/filtro.actions';
+import { filtroReducer } from './todos/filtro/filtro.reducer';
 
 export interface AppState {
     todos: Todo[],

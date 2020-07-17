@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Todo } from '../models/todo.model';
 import { Store } from '@ngrx/store';
 import { AppState } from 'src/app/app.reducer';
-import { filtrosValidos } from 'filtro/filtro.actions';
+import { filtrosValidos } from '../filtro/filtro.actions';
 
 @Component({
   selector: 'app-todo-list',

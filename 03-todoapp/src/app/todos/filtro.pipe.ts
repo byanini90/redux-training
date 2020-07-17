@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { Todo } from './models/todo.model';
-import { filtrosValidos } from 'filtro/filtro.actions';
+import { filtrosValidos } from './filtro/filtro.actions';
 
 @Pipe({
   name: 'filtroTodo'
