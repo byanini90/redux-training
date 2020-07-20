@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "gotyapp-d012a": {
+      "hosting": {
+        "ingresoEgresoApp": [
+          "gotyapp-d012a"
+        ]
+      }
+    }
+  }
+}
