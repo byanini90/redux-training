@@ -1,5 +1,5 @@
 import { createReducer, on } from '@ngrx/store';
-import { setItems, unsetItems, borrarItem } from './ingreso-egreso.actions';
+import { setItems, unsetItems } from './ingreso-egreso.actions';
 import { IngresoEgresoModel } from '../models/ingreso-egreso.model';
 
 export interface State {
