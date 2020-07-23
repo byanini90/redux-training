@@ -1,7 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
-import { ChartsModule } from 'ng2-charts';
 
 // ANgularFire
 import { AngularFireModule } from '@angular/fire';
@@ -17,30 +15,18 @@ import { appReducers } from './app.reducer';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { IngresoEgresoComponent } from './ingreso-egreso/ingreso-egreso.component';
-import { EstadisticaComponent } from './ingreso-egreso/estadistica/estadistica.component';
-import { DetalleComponent } from './ingreso-egreso/detalle/detalle.component';
-import { OrdenIngresoPipe } from './pipes/orden-ingreso.pipe';
-
 // Modulos
 import { AuthModule } from './auth/auth.module';
-import { SharedModule } from './shared/shared.module';
+import { IngresoEgresoModule } from './ingreso-egreso/ingreso-egreso.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    DashboardComponent,
-    IngresoEgresoComponent,
-    EstadisticaComponent,
-    DetalleComponent,
-    OrdenIngresoPipe
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AuthModule,
-    SharedModule,
-    ChartsModule,
+    IngresoEgresoModule,    
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
@@ -49,8 +35,7 @@ import { SharedModule } from './shared/shared.module';
     StoreDevtoolsModule.instrument({
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
-    }),
-    ReactiveFormsModule
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
