@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-// ANgularFire
+// AngularFire
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -17,7 +17,6 @@ import { AppComponent } from './app.component';
 
 // Modulos
 import { AuthModule } from './auth/auth.module';
-import { IngresoEgresoModule } from './ingreso-egreso/ingreso-egreso.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +25,6 @@ import { IngresoEgresoModule } from './ingreso-egreso/ingreso-egreso.module';
   imports: [
     BrowserModule,
     AuthModule,
-    IngresoEgresoModule,    
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
