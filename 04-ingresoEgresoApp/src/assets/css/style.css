@@ -8289,6 +8289,7 @@ pre {
 
 .form-control {
   display: block;
+  height: calc(1.5em + .75rem + 8px) !important;
   width: 100%;
   padding: 0.56rem 1.375rem;
   font-size: 1rem;
